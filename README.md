@@ -9,6 +9,20 @@ In the project directory, you can run:
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+### How data can be passed through routes
+
+1. Creates a user route with a dynamic segment nickname. When the user goes to http://localhost:3000/user/John the dynamic segment should be passed down to the template and the user should see this:
+
+Hello John!
+
+Add postcode | Change my name
+
+2. When the user clicks on "Add postcode" button the user should be transitioned to user/<nickname>/postcode route.
+
+3. When the user is clicking on "Change my name" navigate to user/<nickname>/change-nameroute
+
+_ _ _ _ _ _ _ _
+
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
